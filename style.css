@@ -1,0 +1,110 @@
+body {
+  font-family: 'Montserrat', sans-serif;
+  background: #151f20;
+
+}
+
+/* header */
+
+header {
+  height: 90px;
+}
+
+/* navbar */
+.nav-menu {
+  background: linear-gradient(rgba(0, 0, 0, .3), rgba(0, 0, 0, .5));
+  height:90px;
+  padding: 20px;
+  transition: all .7s;
+}
+
+.menu-item {
+  font-size: 13px;
+  letter-spacing: 1px;
+  color: #eee;
+  transition: color .5s;
+}
+
+.menu-item:hover {
+  color: #70aed2;
+}
+
+.nav-active {
+  color: #70aed2;
+}
+
+.line1, .line2, .line3 {
+  width: 23px;
+  height: 3px;
+  margin: 5px;
+  transition: all .4s;
+}
+
+.change .line1 {
+  transform: rotate(-45deg) translate(-5px, 6px);
+}
+
+.change .line2 {
+  opacity: 0;
+}
+
+.change .line3 {
+  transform: rotate(45deg) translate(-5px, -6px);
+}
+
+.custom-navbar {
+  padding: 5px 30px;
+  background: linear-gradient(rgba(0, 0, 0, .6), rgba(0, 0, 0, .7));
+}
+header{
+    height: 100px;
+}
+/* end of navbar */
+.mission {
+    background: #151f20;
+  }
+  
+  .underline1 {
+    width: 500px;
+    border: 1px solid #eee;
+    margin: auto;
+  }
+  
+  .underline2 {
+    width: 1000px;
+    border: 1px solid #eee;
+    margin: auto;
+  }
+  .pic {
+    animation-name: fromLeft;
+    animation-duration: 3s;
+  }
+  
+  .display {
+    animation-name: fromRight;
+    animation-duration: 3s;
+  }
+  
+  @keyframes fromLeft {
+    0% {
+      transform: translateX(-120px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  
+  @keyframes fromRight {
+    0% {
+      transform: translateX(30px);
+      opacity: 0;
+    }
+    100% {
+      transform: translateX(0);
+      opacity: 1;
+    }
+  }
+  /* end of mission */
+  
